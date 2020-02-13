@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func main19() {
 	i := 10
 	p := &i
 	*p = 20

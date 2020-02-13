@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func main1() {
 	var a [2]string
 	a[0] = "Hello"
 	a[1] = "World"
@@ -31,7 +31,7 @@ func main() {
 	numbers = append(numbers, 5, 6, 7)
 	fmt.Println(numbers)
 
-	pow := []int {1, 2, 4, 8, 16, 32, 64, 128}
+	pow := []int{1, 2, 4, 8, 16, 32, 64, 128}
 	for i, v := range pow {
 		fmt.Printf("2**%d = %d\n", i, v)
 	}

@@ -5,7 +5,7 @@ import (
 	"time"
 )
 
-func main() {
+func main4() {
 	tick := time.Tick(100 * time.Millisecond)
 	boom := time.After(500 * time.Millisecond)
 	for {

@@ -6,11 +6,11 @@ import (
 	"strings"
 )
 
-type rot13Reader struct {
+type Rot13Reader struct {
 	r io.Reader
 }
 
-func (r rot13Reader) Read(p []byte) (n int, err error) {
+func (r Rot13Reader) Read(p []byte) (n int, err error) {
 	rn, rerr := r.r.Read(p)
 	for i := 0; i < rn; i++ {
 		if isSmallLetter(p[i]) {
@@ -32,15 +32,15 @@ func (r rot13Reader) Read(p []byte) (n int, err error) {
 }
 
 func isSmallLetter(b byte) bool {
-	return b > 'a' && b < 'z'
+	return b >= 'a' && b <= 'z'
 }
 
 func isBigLetter(b byte) bool {
-	return b > 'A' && b < 'Z'
+	return b >= 'A' && b <= 'Z'
 }
 
-func main() {
+func main9() {
 	s := strings.NewReader("Lbh penpxrq gur pbqr!")
-	r := rot13Reader{s}
+	r := Rot13Reader{s}
 	io.Copy(os.Stdout, &r)
 }

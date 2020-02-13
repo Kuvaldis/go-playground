@@ -51,7 +51,7 @@ func Crawl(url string, depth int, fetcher Fetcher) {
 	time.Sleep(time.Second)
 }
 
-func main() {
+func main10() {
 	Crawl("https://golang.org/", 4, fetcher)
 }
 

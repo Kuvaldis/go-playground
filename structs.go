@@ -8,7 +8,7 @@ type Vertex struct {
 	X, Y float64
 }
 
-func main() {
+func main23() {
 	v := Vertex{1, 2}
 	v.X = 4
 	p := &v

@@ -22,7 +22,7 @@ func SqrtErr(x float64) (float64, error) {
 	return z, nil
 }
 
-func main() {
+func main7() {
 	fmt.Println(SqrtErr(2))
 	fmt.Println(SqrtErr(-2))
 }

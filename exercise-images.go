@@ -23,7 +23,7 @@ func (i Image) At(x, y int) color.Color {
 	return color.RGBA{R: v, G: v, B: 255, A: 255}
 }
 
-func main() {
+func main8() {
 	//m := Image{width: 200, height: 100}
 	//pic.ShowImage(m)
 }

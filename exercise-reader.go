@@ -9,6 +9,3 @@ func (r MyReader) Read(b []byte) (int, error) {
 	}
 	return len(b), nil
 }
-
-func main() {
-}

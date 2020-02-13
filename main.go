@@ -35,7 +35,7 @@ func needFloat(x float64) float64 {
 	return x * 0.1
 }
 
-func main() {
+func main15() {
 	fmt.Println("My favorite number is", rand.Intn(10))
 	fmt.Printf("Now you have %g problems.\n", math.Sqrt(7))
 	fmt.Println(add(42, 13))

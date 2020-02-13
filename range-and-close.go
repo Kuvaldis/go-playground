@@ -11,7 +11,7 @@ func fibonacci2(n int, c chan int) {
 	close(c)
 }
 
-func main() {
+func main20() {
 	c := make(chan int, 10)
 	go fibonacci2(cap(c), c)
 	for i := range c {

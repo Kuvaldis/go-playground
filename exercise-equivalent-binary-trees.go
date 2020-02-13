@@ -34,7 +34,7 @@ func Same(t1, t2 *Tree) bool {
 	return true
 }
 
-func main() {
+func main6() {
 	//ch := make(chan int)
 	//go Walk(tree.New(1), ch)
 	//for i := 0; i < 10; i++ {

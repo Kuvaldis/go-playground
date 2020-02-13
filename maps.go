@@ -9,7 +9,7 @@ type Coordinate struct {
 	Lat, Long float64
 }
 
-func main() {
+func main16() {
 	m1 := map[string]Coordinate{
 		"Bell Labs": Coordinate{40.68433, -74.39967},
 		"Google":    {37.42202, -122.08408},

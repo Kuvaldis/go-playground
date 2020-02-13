@@ -6,7 +6,7 @@ import (
 	"strings"
 )
 
-func main() {
+func main21() {
 	r := strings.NewReader("Hello, Reader!")
 
 	b := make([]byte, 8)

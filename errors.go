@@ -22,7 +22,7 @@ func run() error {
 	}
 }
 
-func main() {
+func main5() {
 	if err := run(); err != nil {
 		fmt.Println(err)
 	}
